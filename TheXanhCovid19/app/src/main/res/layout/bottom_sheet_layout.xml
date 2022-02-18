@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn khai báo:"
+        android:layout_gravity="left"
+        android:textColor="#30B55C"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="15dp"
+        >
+
+    </TextView>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:gravity="center"
+        android:background="#30B55C"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:text="Sức khỏe bình thường"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:text="(Khai báo y tế nhanh)"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="italic">
+
+        </TextView>
+
+
+
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="350dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Khai báo y tế">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="350dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Khai báo hộ người khác">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="350dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Danh sách tờ khai">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="350dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Quay lại">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DemoActivity">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:width="60px"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:textColor="@color/black">
+
+        </ImageButton>
+
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:id="@+id/banner"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/banner">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_below="@id/banner"
+            android:text="CÁC TÍNH NĂNG CHÍNH CỦA PC - COVID"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/TN1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Cấp, quản lý mã QR cá nhân và địa điểm"
+            android:textColor="#30B55C"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/TN2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TN1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Quét mã QR"
+            android:textColor="#30B55C"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TN3"
+            android:layout_below="@id/TN2"
+            android:text="Khai báo y tế"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="17dp"
+            android:textColor="#30B55C"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TN4"
+            android:layout_below="@id/TN3"
+            android:layout_margin="20dp"
+            android:text="Phản ánh người dân"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="#30B55C"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/TN4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logopc"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GT"
+            android:layout_below="@id/logo"
+            android:layout_margin="20dp"
+            android:text="Tính năng của PC - COVID sẽ được liên tục cập nhật, điều chỉnh theo chỉ đạo của ban chỉ đạo Quốc gia phòng, chống dịch Covid 19, mang lại sự thuận tiện nhất cho người dân, phù hợp với chiến lược phòng, chống dịch Covid-19 của Quốc gia theo từng giai đoạn cụ thể"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/GT"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design by Phan Chi Trung - 2021"
+                android:padding="10dp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

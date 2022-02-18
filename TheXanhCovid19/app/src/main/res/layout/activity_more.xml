@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreActivity">
+
+    <TableLayout
+        android:id="@+id/thecovid"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/avt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ntt">
+
+        </ImageView>
+
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/thecovid"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TableRow android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/GT"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_info_24">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/CD"
+                android:src="@drawable/ic_baseline_settings_24">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:id="@+id/HD"
+                android:src="@drawable/ic_baseline_menu_book_24">
+
+            </ImageView>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/logo2"
+                android:text="Giới thiệu"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo2"
+                android:text="Cài đặt"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/logo2"
+                android:text="Hướng dẫn"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/table_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/table"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TableRow android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/loco"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_location_on_24">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/DL"
+                android:src="@drawable/ic_baseline_leaderboard_24">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:id="@+id/HL"
+                android:src="@drawable/ic_baseline_local_phone_24">
+
+            </ImageView>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/logo2"
+                android:text="Nơi đã đến"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo2"
+                android:text="Dữ liệu Covid"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/logo2"
+                android:text="Hotline 24/7"
+                android:textColor="#30B55C"
+                android:textStyle="bold">
+
+            </TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left">
+
+
+        <ImageButton
+            android:layout_margin="10dp"
+            android:layout_below="@id/btnQR"
+            android:layout_width="60dp"
+            android:background="@color/white"
+            android:id="@+id/btnTB"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_notifications_24">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right">
+
+
+
+        <ImageButton
+            android:layout_margin="10dp"
+            android:layout_below="@id/btnQR"
+            android:layout_width="60dp"
+            android:background="@color/white"
+            android:id="@+id/btnHome"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_home_24">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

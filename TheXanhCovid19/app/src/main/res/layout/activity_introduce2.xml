@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonBack"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:width="60px">
+
+    </ImageButton>
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_below="@id/banner"
+        android:text="PC-COVID: ỨNG DỤNG PHÒNG, CHỐNG DỊCH COVID 19 QUỐC GIA"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@id/title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:text="Cơ quan chủ trì, vận hành"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:textColor="#616161"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TableRow
+            android:gravity="center"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="13dp"
+                android:src="@drawable/logo2">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo3">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/congan">
+
+            </ImageView>
+        </TableRow>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/title"
+            android:src="@drawable/pccovid">
+
+        </ImageView>
+
+
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design by Phan Chi Trung - 2021"
+            android:padding="10dp"
+            android:gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

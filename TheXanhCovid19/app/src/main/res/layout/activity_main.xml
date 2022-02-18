@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Thông tin đăng nhập"
+        android:textColor="#30B55C"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="20dp"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:drawablePadding="10dp"
+        android:hint="Nhập số điện thoại"
+        android:padding="20dp"
+        android:textColorHint="#616161" />
+
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#616161"
+        app:passwordToggleEnabled="true" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="Xác nhận bạn đã đọc và đồng ý với"
+        android:textStyle="bold">
+
+    </CheckBox>
+
+
+    <TextView
+        android:id="@+id/sudung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_marginLeft="70dp"
+        android:text="Điều khoản sử dụng"
+        android:textColor="#30B55C"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="600px"
+        android:text="Đăng nhập"
+        app:backgroundTint="#30B55C">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backhome"
+        android:layout_below="@id/buttonLogin"
+        android:text="Thoát"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#30B55C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design by Phan Chi Trung - 2021"
+            android:padding="10dp"
+            android:gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

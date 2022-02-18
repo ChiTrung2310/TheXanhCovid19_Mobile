@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RulesActivity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonBack"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:width="60px">
+
+    </ImageButton>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐIỀU KHOẢN SỬ DỤNG"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/tv_DK"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#30B55C">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_DK"
+        android:id="@+id/tv_1"
+        android:text="Khi sử dụng Ứng dụng, Người dùng đồng ý cho phép ứng dụng có quyền sử dụng những chức năng sau trên điện thoại của mình, tất cả các truy cập này chỉ được chúng tôi thực hiện khi có sự đồng ý của bạn, vì vậy, bạn thừa nhận rằng, khi bạn đã cấp quyền cho chúng tôi, bạn sẽ không có bất kỳ khiếu nại nào đối với việc truy cập này:"
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:id="@+id/tv_2"
+        android:text="(1) Đọc và ghi lịch sử tiếp xúc"
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_2"
+        android:id="@+id/tv_3"
+        android:text="(2) Sử dụng Bluetooth và quyền truy cập vị trí (Android) để ghi nhận tiếp xúc gần bằng công nghệ năng lượng thấp (BLE)."
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_3"
+        android:id="@+id/tv_4"
+        android:text="(3) Truy cập vào Internet từ thiết bị của bạn."
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_4"
+        android:id="@+id/tv_5"
+        android:text="(4) Sử dụng Camera để quét mã QR."
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_5"
+        android:id="@+id/tv_6"
+        android:text="(5) Truy cập ảnh, video, âm thanh và tệp để lưu mã QR về điện thoại."
+        android:layout_centerHorizontal="false"
+        android:layout_margin="10dp"
+        android:textSize="15dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_below="@id/tv_6"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner"></ImageView>
+
+
+</RelativeLayout>

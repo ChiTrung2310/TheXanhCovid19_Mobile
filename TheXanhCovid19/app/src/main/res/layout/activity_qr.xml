@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QR_Activity">
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonBack"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:width="60px">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:layout_margin="20dp"
+        android:text="Tạo mã QR địa điểm"
+        android:textSize="20dp"
+        android:textColor="#30B55C"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_warning"
+        android:layout_below="@+id/tv_title"
+        android:text="Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam"
+        android:textSize="13dp"
+        android:layout_margin="5dp"
+        android:textColor="#f46a6a"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_warning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Tên địa điểm">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tỉnh/TP của địa điểm"
+        android:layout_below="@+id/tv_location"
+        android:id="@+id/ed_state"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quận/Huyện của địa điểm"
+        android:layout_below="@+id/ed_state"
+        android:id="@+id/ed_district"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phường/xã của địa điểm"
+        android:layout_below="@+id/ed_district"
+        android:id="@+id/ed_ward"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số nhà"
+        android:id="@+id/ed_soNha"
+        android:layout_below="@+id/ed_ward"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_soNha"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_create_QR"
+        android:backgroundTint="#30B55C"
+        android:text="Tạo mã QR">
+
+    </Button>
+
+
+</RelativeLayout>
+
+</ScrollView>

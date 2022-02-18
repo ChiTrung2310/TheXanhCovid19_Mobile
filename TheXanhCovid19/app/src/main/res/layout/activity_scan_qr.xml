@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanQR_Activity">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scanner_view"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:maskColor="#6C000000"/>
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black">
+
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/btn_xN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#30B55C"
+        android:text="Xác nhận đến địa điểm này">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_kBYT"
+        android:layout_below="@id/btn_xN"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#30B55C"
+        android:text="Khai báo y tế">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_kBYT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#30B55C"
+        android:text="Trở lại">
+
+    </Button>
+
+
+</RelativeLayout>
+
+</ScrollView>
